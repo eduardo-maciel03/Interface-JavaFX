@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="859.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhofaculdade.TelaLoginController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="287.0" style="-fx-background-color: #1a89c9;">
+         <children>
+            <Button fx:id="btnSair" layoutX="72.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnSair" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="SAIR" textFill="WHITE" />
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sair.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnHome" layoutX="72.0" layoutY="258.0" mnemonicParsing="false" onAction="#btnHome" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="HOME" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutX="292.0" prefHeight="600.0" prefWidth="608.0" style="-fx-background-color: #c2c0c0;">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="608.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/unimater.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLogin" layoutX="166.0" layoutY="351.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="65.0" prefWidth="272.0" style="-fx-background-color: #014e87; -fx-background-color: ;" text="LOGIN" textFill="WHITE" />
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="106.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="106.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/lock.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="login" layoutX="175.0" layoutY="200.0" prefHeight="59.0" prefWidth="254.0" promptText="Informe seu Usuário" />
+            <PasswordField fx:id="senha" layoutX="175.0" layoutY="270.0" prefHeight="59.0" prefWidth="254.0" promptText="Informe sua senha" />
+         </children></Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhofaculdade.CadastroUsuarioController">
+   <children>
+      <Pane layoutX="292.0" prefHeight="600.0" prefWidth="608.0" style="-fx-background-color: #c2c0c0;">
+         <children>
+            <ImageView fitHeight="140.0" fitWidth="608.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/unimater.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtNome" layoutX="152.0" layoutY="181.0" prefHeight="31.0" prefWidth="427.0" />
+            <Button fx:id="btnSalvar" layoutX="358.0" layoutY="537.0" mnemonicParsing="false" onAction="#btnSalvar" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: #014e87;" text="SALVAR" textFill="WHITE" />
+            <Text layoutX="32.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome completo" />
+            <Text layoutX="59.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado civil" />
+            <SplitMenuButton fx:id="splitEstadoCivil" layoutX="153.0" layoutY="234.0" mnemonicParsing="false" onAction="#splitEstadoCivil" prefHeight="31.0" prefWidth="287.0" text="Selecione">
+              <items>
+                <MenuItem fx:id="splitSolteiro" mnemonicParsing="false" onAction="#splitSolteiro" text="Solteiro" />
+                <MenuItem fx:id="splitCasado" mnemonicParsing="false" onAction="#splitCasado" text="Casado" />
+                  <MenuItem fx:id="splitViuvo" mnemonicParsing="false" onAction="#splitViuvo" text="Viúvo" />
+                  <MenuItem fx:id="splitDivorciado" mnemonicParsing="false" onAction="#splitDivorciado" text="Divorciado" />
+              </items>
+            </SplitMenuButton>
+            <CheckBox fx:id="checkBrasileiro" layoutX="153.0" layoutY="290.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="117.0" text="Brasileiro(a)" />
+            <Text layoutX="3.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de nascimento" />
+            <DatePicker fx:id="dateData" layoutX="153.0" layoutY="330.0" promptText="DD/MM/AAAA" />
+            <Text layoutX="57.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Possui CNH" />
+            <CheckBox fx:id="checkSim" layoutX="153.0" layoutY="378.0" mnemonicParsing="false" text="Sim" />
+            <CheckBox fx:id="checkNao" layoutX="229.0" layoutY="378.0" mnemonicParsing="false" text="Não" />
+            <Text layoutX="54.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escolaridade" />
+            <Slider fx:id="sliderEscolaridade" layoutX="166.0" layoutY="427.0" prefHeight="17.0" prefWidth="381.0" />
+            <Text layoutX="136.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fundamental" />
+            <Text layoutX="249.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Médio" />
+            <Text layoutX="329.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Superior" />
+            <Text layoutX="418.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mestrado" />
+            <Text layoutX="506.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doutorado" />
+         </children>
+      </Pane>
+      <Pane prefHeight="600.0" prefWidth="287.0" style="-fx-background-color: #1a89c9;">
+         <children>
+            <Button fx:id="btnNovo" layoutX="72.0" onAction="#btnNovo" layoutY="258.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="NOVO" textFill="WHITE" />
+            <Button fx:id="btnSair" layoutX="72.0" onAction="#btnSair" layoutY="323.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #014e87;" text="SAIR" textFill="WHITE" />
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/sair.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
